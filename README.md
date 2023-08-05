@@ -1,6 +1,6 @@
 # open-pr
 
-This is a simple Javascipt redirector deployed in GitHub Pages for opening a GitHub Pull Request
+This is a simple Javascript redirector deployed in GitHub Pages for opening a GitHub Pull Request
 in Microsoft's CodeFlow review tool. The URL format would look like this:
 
 https://microsoft.github.io/open-pr/?codeflow=https://github.com/org/repos/pull/12345
