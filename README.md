@@ -1,14 +1,20 @@
-# Project
+# open-pr
 
-> This repo has been populated by an initial template to help get you started. Please
-> make sure to update the content to build a great experience for community-building.
+This is a simple Javascipt redirector deployed in GitHub Pages for opening a GitHub Pull Request
+in Microsoft's CodeFlow review tool. The URL format would look like this:
 
-As the maintainer of this project, please make a few updates:
+https://microsoft.github.io/open-pr/?codeflow=https://github.com/org/repos/pull/12345
 
-- Improving this README.MD file to provide a great experience
-- Updating SUPPORT.MD with content about this project's support experience
-- Understanding the security reporting process in SECURITY.MD
-- Remove this section from the README
+This loads a simple HTML page with 2-lines of Javascript that will change to a URI that will
+open the CodeFlow application, if installed. This exists so that an HTTPS link can be embedded
+in Markdown or other site that does not allow custom URI-schemes. GitHub Flavored Markdown is the
+primary target for this solution.
+
+The idea for this comes from this repository: https://github.com/intradeus/http-protocol-redirector. Rather
+than have a generic redirector, this will only allow one specific type of redirection. If other tools
+to view Pull Requests via a custom URI become available it would be easy to extend this to support
+other tools. VS Code does not seem to offer this currently, but originally thought that would be an
+option to include here in addition to CodeFlow.
 
 ## Contributing
 
